@@ -29,3 +29,9 @@
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 }
+.menu-categories { padding-bottom: 15px; }
+.txt-category { display: block; background: url('../images/txt-category.png') no-repeat; width: 133px; height: 38px; margin: 20px 40px 20px 0; }
+
+ul.menu-category-items { list-style: url("../images/icon-menu-star.png"); background: #FFF; margin: 0 15px; padding: 5px 0; }
+ul.menu-category-items li { line-height: 30px; }
+ul.menu-category-items li a { color: #230001; font-weight: bold; text-decoration: none; }

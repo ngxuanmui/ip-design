@@ -46,13 +46,30 @@ $doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/general.c
 			<div id="component-content">
 				<jdoc:include type="message" />
 				<div class="grid-left fltlft">
-					<div class="menu-categories">
-						<h1>Danh mục</h1>
-						<ul class="menu-category-items">
+					<div class="menu-categories bg-content round-conners-5">
+						<span class="txt-category fltrgt"></span>
+						<div class="clr"></div>
+						<ul class="menu-category-items round-conners-5">
 							<li>
-								abc
+								<a href="#">Thông tin trường</a>
+							</li>
+							<li>
+								<a href="#">Giới thiệu chương trình học</a>
+							</li>
+							<li>
+								<a href="#">Thực đơn của bé</a>
+							</li>
+							<li>
+								<a href="#">Thông báo</a>
+							</li>
+							<li>
+								<a href="#">Triển lãm sách truyện</a>
+							</li>
+							<li>
+								<a href="#">Góc phụ huynh</a>
 							</li>
 						</ul>
+						
 					</div>
 				</div>
 				<div class="grid-right fltrgt">
