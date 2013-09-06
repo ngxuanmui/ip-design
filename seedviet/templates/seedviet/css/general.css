@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+
+.fltlft { float: left; }
+.fltrgt { float: right; }
+.txt-left { text-align: left; }
+.txt-right { text-align: right; }
+.txt-center { text-align: center; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+
+.container .grid-left {  }
+
+.container .grid-wraper { background: #1a9d47; }
+
+.bg-content { background: #6fbe44; }
+
+.content { padding: 25px; }
+
+#header { width: 1200px; height: 588px; background: url('../images/seedviet-banner.png') no-repeat; }
+
+.round-conners-5 {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.round-conners-10 {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
