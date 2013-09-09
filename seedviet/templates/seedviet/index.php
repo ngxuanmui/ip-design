@@ -71,6 +71,28 @@ $doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/general.c
 						</ul>
 						
 					</div>
+					
+					<div class="left-module bg-content round-conners-5">
+						<span class="txt-album fltrgt"></span>
+						<div class="clr"></div>
+						<ul class="left-module-box left-module-albums round-conners-5">
+							<li>
+								<img src="<?php echo $this->baseurl.'/templates/'.$this->template.'/images/sample-album.png'; ?>" />
+							</li>
+						</ul>
+						
+					</div>
+					
+					<div class="left-module bg-content round-conners-5">
+						<span class="txt-baby-exam fltrgt"></span>
+						<div class="clr"></div>
+						<ul class="left-module-box left-module-baby-exam">
+							<li>
+								<img src="<?php echo $this->baseurl.'/templates/'.$this->template.'/images/sample-album.png'; ?>" />
+							</li>
+						</ul>
+						
+					</div>
 				</div>
 				<div class="grid-right fltrgt">
 					<div class="content bg-content round-conners-10">
@@ -81,9 +103,17 @@ $doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/general.c
 			</div>
 			
 		</div>
-		
-		<div id="footer"></div>
 	</div>
+		
+		<div id="footer" class="relative">
+			<div class="footer-content">
+				<p>Trường mầm non chất lượng cao SeedViet</p>
+				<p>Địa chỉ: Thanh Liệt, Thanh Trì, Hà Nội</p>
+				<p>Điện thoại: 0918.685.085</p>
+			</div>
+			<div class="img-left-bottom absolute"></div>
+			<div class="img-right-bottom absolute"></div>
+		</div>
 	<jdoc:include type="modules" name="debug" />
 </body>
 </html>

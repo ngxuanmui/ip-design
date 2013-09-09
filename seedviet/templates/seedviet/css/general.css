@@ -29,9 +29,21 @@
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 }
-.menu-categories { padding-bottom: 15px; }
+.menu-categories { padding-bottom: 15px; margin-bottom: 15px; }
 .txt-category { display: block; background: url('../images/txt-category.png') no-repeat; width: 133px; height: 38px; margin: 20px 40px 20px 0; }
+.txt-album { display: block; background: url('../images/txt-album.png') no-repeat; width: 194px; height: 63px; margin: 0; margin: 5px 30px 0px 0; }
+.txt-baby-exam { display: block; background: url('../images/txt-baby-exam.png') no-repeat; width: 197px; height: 47px; margin: 5px 25px 0px 0; }
 
 ul.menu-category-items { list-style: url("../images/icon-menu-star.png"); background: #FFF; margin: 0 15px; padding: 5px 0; }
 ul.menu-category-items li { line-height: 30px; }
 ul.menu-category-items li a { color: #230001; font-weight: bold; text-decoration: none; }
+
+ul.left-module-box { background: #FFF; list-style: none; margin: 0 15px 5px 15px; padding: 0; }
+ul.left-module-box li { text-align: center; margin: 0; padding: 5px 0;}
+.left-module { margin-bottom: 15px; padding-bottom: 5px; }
+
+#footer { background: #1bb14b; height: 120px; margin-top: 20px; }
+#footer .footer-content { margin: auto; width: 970px; text-align: center; font-weight: bold; font-size: 16px; padding-top: 20px; }
+#footer .footer-content p { margin: 0; n}
+.img-left-bottom { background: url('../images/img-left-bottom.png') no-repeat; width: 296px; height: 136px; bottom: 0; left: 60px; }
+.img-right-bottom { background: url('../images/img-right-bottom.png') no-repeat; width: 383px; height: 228px; bottom: 0; right: 15px; }
