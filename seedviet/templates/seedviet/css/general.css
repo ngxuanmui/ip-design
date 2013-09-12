@@ -8,6 +8,8 @@
 .relative { position: relative; }
 .absolute { position: absolute; }
 
+.display-none { display: none; }
+
 .container .grid-left {  }
 
 .container .grid-wraper { background: #1a9d47; }
@@ -47,3 +49,12 @@ ul.left-module-box li { text-align: center; margin: 0; padding: 5px 0;}
 #footer .footer-content p { margin: 0; n}
 .img-left-bottom { background: url('../images/img-left-bottom.png') no-repeat; width: 296px; height: 136px; bottom: 0; left: 60px; }
 .img-right-bottom { background: url('../images/img-right-bottom.png') no-repeat; width: 383px; height: 228px; bottom: 0; right: 15px; }
+
+#left-menu-flower-1 { width: 124px; height: 136px; background: url('../images/left-flower-1.png') no-repeat; top: -45px; left: -40px; }
+#left-menu-flower-2 { width: 91px; height: 63px; background: url('../images/left-flower-2.png') no-repeat; top: 210px; right: -10px; }
+
+.video-store { display: block; width: 144px; height: 35px; background: url('../images/txt-video-store.png') no-repeat; margin-left: 15px; }
+
+.left-module-box .phocagallery-box-file-first { background: none !important; }
+
+.left-module-box #phocagallery-module-ri .phocagallery-box-file { border: none !important; }

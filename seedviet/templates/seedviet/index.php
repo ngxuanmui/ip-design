@@ -39,58 +39,36 @@ $doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/general.c
 <body>
 	<div class="container">
 	
-		<div id="header"></div>
+		<div id="header">
+			<div id="main-menu">
+				<jdoc:include type="modules" name="main-menu" />
+			</div>
+		</div>
 		
 		<div class="grid-wraper round-conners-10">
 			
 			<div id="component-content">
 				<jdoc:include type="message" />
 				<div class="grid-left fltlft">
-					<div class="menu-categories bg-content round-conners-5">
+					<div class="menu-categories bg-content round-conners-5 relative">
 						<span class="txt-category fltrgt"></span>
 						<div class="clr"></div>
-						<ul class="menu-category-items round-conners-5">
-							<li>
-								<a href="#">Thông tin trường</a>
-							</li>
-							<li>
-								<a href="#">Giới thiệu chương trình học</a>
-							</li>
-							<li>
-								<a href="#">Thực đơn của bé</a>
-							</li>
-							<li>
-								<a href="#">Thông báo</a>
-							</li>
-							<li>
-								<a href="#">Triển lãm sách truyện</a>
-							</li>
-							<li>
-								<a href="#">Góc phụ huynh</a>
-							</li>
-						</ul>
-						
+						<jdoc:include type="modules" name="left-menu" />
+						<div id="left-menu-flower-1" class="absolute"></div>
+					</div>
+					
+					<div class="left-module bg-content round-conners-5 relative">
+						<a href="<?php echo JRoute::_('index.php?option=com_phocagallery&view=category&Itemid=136', false); ?>" class="txt-album fltrgt"></a>
+						<div class="clr"></div>
+						<jdoc:include type="modules" name="left-album" />
+						<a href="<?php echo JRoute::_('index.php?option=com_youtubegallery&Itemid=135', false); ?>" class="video-store"></a>
+						<div id="left-menu-flower-2" class="absolute"></div>
 					</div>
 					
 					<div class="left-module bg-content round-conners-5">
-						<span class="txt-album fltrgt"></span>
+						<a href="<?php echo JRoute::_('index.php?option=com_phocagallery&view=category&Itemid=137', false); ?>" class="txt-baby-exam fltrgt"></a>
 						<div class="clr"></div>
-						<ul class="left-module-box left-module-albums round-conners-5">
-							<li>
-								<img src="<?php echo $this->baseurl.'/templates/'.$this->template.'/images/sample-album.png'; ?>" />
-							</li>
-						</ul>
-						
-					</div>
-					
-					<div class="left-module bg-content round-conners-5">
-						<span class="txt-baby-exam fltrgt"></span>
-						<div class="clr"></div>
-						<ul class="left-module-box left-module-baby-exam">
-							<li>
-								<img src="<?php echo $this->baseurl.'/templates/'.$this->template.'/images/sample-album.png'; ?>" />
-							</li>
-						</ul>
+						<jdoc:include type="modules" name="left-baby-exam" />
 						
 					</div>
 				</div>

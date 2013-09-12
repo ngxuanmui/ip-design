@@ -942,9 +942,9 @@ if ($images) {
 				}
 			
 
-				$output[$i] .= '<div class="phocagallery-box-file" style="height:'.$imageHeight['boxsize'].'px; width:'.$imageWidth['boxsize'].'px;float:left">' . "\n";
+				$output[$i] .= '<div class="phocagallery-box-file" style="height: auto; width: auto; margin: 0 !important; padding: 5px !important;float:left">' . "\n";
 				$output[$i] .= '<center>'  . "\n";
-				$output[$i] .= '<div class="phocagallery-box-file-first" style="height:'.$imageHeight['size'].'px;width:'.$imageWidth['size'].'px;">'. "\n"
+				$output[$i] .= '<div class="phocagallery-box-file-first">'. "\n"
 					.'<div class="phocagallery-box-file-second">' . "\n"
 					.'<div class="phocagallery-box-file-third">' . "\n"
 					.'<center>' . "\n"

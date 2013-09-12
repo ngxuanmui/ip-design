@@ -7,11 +7,21 @@ if ($phocagallery_module_width !='') {
 	$pgWidth = '';
 }
 
-?><div id ="phocagallery-module-ri" style="text-align:center;<?php echo $pgWidth;?>"><center style="padding:0px;margin:0px;"><?php
-foreach ($output as $value) {
-	echo $value;
-}
-?></center></div><div style="clear:both"></div><?php
+?>
+<ul class="left-module-box left-module-albums round-conners-5">
+	<li>
+		<div id ="phocagallery-module-ri" style="text-align:center;<?php echo $pgWidth;?>">
+			<center style="padding: 0px; margin: 0px;"><?php
+			foreach ( $output as $value ) {
+				echo $value;
+			}
+			?></center>
+		</div>
+		<div style="clear: both"></div>
+	</li>
+</ul>
+
+<?php
 if ($tmpl['detailwindow'] == 6) {
 	?><script type="text/javascript">
 var gjaksMod<?php echo $randName ?> = new SZN.LightBox(dataJakJsMod<?php echo $randName ?>, optgjaksMod<?php echo $randName ?>);
