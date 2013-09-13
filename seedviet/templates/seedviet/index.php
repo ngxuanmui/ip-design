@@ -39,8 +39,8 @@ $doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/general.c
 <body>
 	<div class="container">
 	
-		<div id="header">
-			<div id="main-menu">
+		<div id="header" class="relative">
+			<div id="main-menu" class="absolute">
 				<jdoc:include type="modules" name="main-menu" />
 			</div>
 		</div>
