@@ -39,8 +39,8 @@ $doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/general.c
 <body>
 	<div class="container">
 	
-		<div id="header">
-			<div id="main-menu">
+		<div id="header" class="relative">
+			<div id="main-menu" class="absolute">
 				<jdoc:include type="modules" name="main-menu" />
 			</div>
 		</div>
@@ -49,6 +49,16 @@ $doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/general.c
 			
 			<div id="component-content">
 				<jdoc:include type="message" />
+				
+				<?php 
+				$jInput = JFactory::getApplication()->input;
+				
+				$option = $jInput->getString('option', 'com_content');
+				$view = $jInput->getString('view', 'home');
+				
+				if ($view != 'camera'):
+				?>
+				
 				<div class="grid-left fltlft">
 					<div class="menu-categories bg-content round-conners-5 relative">
 						<span class="txt-category fltrgt"></span>
@@ -69,14 +79,43 @@ $doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/general.c
 						<a href="<?php echo JRoute::_('index.php?option=com_phocagallery&view=category&Itemid=137', false); ?>" class="txt-baby-exam fltrgt"></a>
 						<div class="clr"></div>
 						<jdoc:include type="modules" name="left-baby-exam" />
-						
+					</div>
+					<div class="left-module bg-content round-conners-5 relative stat-container">
+						<span class="support-online absolute"></span>
+						<a href="ymsgr:sendIM?muinx" class="left-nick-yahoo">
+							<img src="http://opi.yahoo.com/online?u=muinx&amp;m=g&amp;t=2" alt="Yahoo Messenger" title="Yahoo Messenger" />
+						</a>
+						<div class="txt-mobile-support"></div>
+						<div class="clr"></div>
+						<div style="margin: 10px auto; width: 165px;">
+							<!-- Histats.com  START  (standard)-->
+							<script type="text/javascript">document.write(unescape("%3Cscript src=%27http://s10.histats.com/js15.js%27 type=%27text/javascript%27%3E%3C/script%3E"));</script>
+							<a href="http://www.histats.com" target="_blank" title="web stats" ><script  type="text/javascript" >
+							try {Histats.start(1,2448433,4,406,165,100,"00011101");
+							Histats.track_hits();} catch(err){};
+							</script></a>
+							<noscript><a href="http://www.histats.com" target="_blank"><img  src="http://sstatic1.histats.com/0.gif?2448433&101" alt="web stats" border="0"></a></noscript>
+							<!-- Histats.com  END  -->
+						</div>
 					</div>
 				</div>
 				<div class="grid-right fltrgt">
 					<div class="content bg-content round-conners-10">
 						<jdoc:include type="component" />
+						
 					</div>
 				</div>
+				
+				<?php else: ?>
+				
+				<div class="grid-full fltrgt">
+					<div class="content bg-content round-conners-10">
+						<jdoc:include type="component" />
+					</div>
+				</div>
+				
+				<?php endif; ?>
+				
 				<div class="clr"></div>
 			</div>
 			
